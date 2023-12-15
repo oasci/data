@@ -1,0 +1,8 @@
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 10
+  [en.params]
+    languageISO = "EN"
+    languageTag = "en-US"
+    footer = "<a href='https://creativecommons.org/licenses/by/4.0/' target='_blank'>CC BY 4.0</a>"
