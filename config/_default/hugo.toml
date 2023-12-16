@@ -1,5 +1,5 @@
 title = "OASCI Data Portal"
-baseURL = "https://data.oasci.org/"
+baseURL = "/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
