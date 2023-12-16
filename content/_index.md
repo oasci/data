@@ -1,5 +1,5 @@
 ---
-title : "Your gateway for limitless scientific insight"
+title : "Your gateway for limitless scientific data insight"
 description: "A portal to all OASCI data"
 lead: "Access data used in any OASCI project"
 date: 2023-09-07T16:33:54+02:00
