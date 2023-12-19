@@ -31,7 +31,71 @@
     </div>
   </section>
   {{ end }}
+  <!--
+  <section class="section section-cards">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title fs-4">📄 Documentation that delights</h2>
+              <p class="card-text">Includes: Site navigation, search, internationalization, SEO, easy-to-read typography, code highlighting, dark mode and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title fs-4">🚀 Powered by Hyas</h2>
+              <p class="card-text">Leverage the full power and performance of Hyas. Extend Doks with your favorite Hyas integrations and libraries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title fs-4">🌐 Deploy where you want</h2>
+              <p class="card-text">Ready to build and deploy your Doks site? Follow one of our guides to different deployment services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title fs-4">👊 Join our community</h2>
+              <p class="card-text">Get support, get involved, and join our community of Doks developers — it all happens on <a href="https://github.com/h-enk/doks/discussions">Discussions</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
 {{ end }}
 
 {{ define "sidebar-footer" }}
+{{ if site.Params.doks.sectionFooter -}}
+<!--
+<section class="section section-md container-fluid bg-light">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-7">
+      <h2 class="mt-2">Start building with Doks today</h2>
+      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get_started" }}</a>
+    </div>
+  </div>
+</section>
+-->
+<section class="section section-credits container">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-6">
+      <p class="text-muted"><small>Brought to you by</small></p>
+      <div class="card bg-transparent border-0">
+        {{ partial "inline-svg" (dict "src" "svgs/logos/hyas-logo-semibold-wide.svg" "width" "125px" "height" "100%" "class" "svg-inline-custom svg-monochrome mx-auto mt-n2") }}
+      </div>
+      <p>Hyas is a Node.js web framework designed for speed and security. Build the website you want with integrations, and deploy everywhere, all powered by Hugo and npm.</p>
+      <a href="https://gethyas.com/">Learn about Hyas</a>
+    </div>
+  </div>
+</section>
+{{ end -}}
 {{ end }}
